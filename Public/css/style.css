@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+.main_header {
+    background-color: #EAC926;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.cuerpo-de-página{ /*esto está parchado*/
+    margin-top: 10vh;
+}
+.main-nav-bar{
+    display: none;
+}
+.main-nav-bar ul{
+    margin-left: 14px;
+    list-style: none;
+    font-weight: bold;
+}
+.main-nav-bar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+}
+footer{
+    text-align: center;
+}
+.compra-en-cuotas {
+    color: #03264C;
+    font-weight: 900;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+p{
+    color: #666;
+}
+ul{
+    color: #1259c3;
+}
+div .banner {
+    width: 100%;
+}
+.logo{
+    width: 30%;
+}
+h4 {
+    font-size: 12px;
+}
+h2 {
+    font-size: 24px;
+    margin-left: 5vw;
+}
+
+.prices{
+    font-size: 18px;
+    width: 30%;
+    display: inline;
+}
+.discounts{
+    font-size: 16px;
+    width: 70%;
+    color: green;
+    display: inline;
+    margin-left: 10%;
+}
+.descriptions{
+    opacity: 0;
+    font-size: 16px;
+}
+#articulo:hover .descriptions{
+    opacity: 100%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+.Burger{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+i{
+    color: black;
+    font-weight: 900;
+    font-size: 17px; 
+}
+.centrar{
+    text-align: center;
+}
+.centrar:hover{
+    color: blue;
+}
+.barra {
+    border: solid black 1px;
+    width: 50%;
+    background-color: white;
+    border-radius: 3px;
+}
+img #banner{
+    width: 100%;
+}
+img{
+    width: 100vw;
+}
+section{
+    font-size: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+.ultima-visita, .seccion-de-ofertas{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+#producto{
+    width: 100%;
+    position: relative;
+}
+#producto h2{
+    color: #ffff;
+    margin: 0;
+    background-color: rgb(0,0,0,0.5);
+    position: absolute;
+    top:0;
+}
+#envio{
+    color: green;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+#articulo:hover #envio{
+    animation: rotacion 1s;
+}
+
+@keyframes rotacion {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+.boton_envio:hover{
+    background-color: #0022AA;
+}
+.login{
+    margin-top: 20vh;
+}
+
+#articulo{
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+#articulo:hover{
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+
+div #caja{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+@media (max-width: 360px) {/*celulares*/
+    .descriptions{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 361px) {/*tablets*/
+    #Burger{
+        display: none;
+    }
+    .main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.form{
+    padding: 20px;
+}
+.control-form{
+    margin-bottom: 15px;
+
+}
+.control-form label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 100%;
+    padding: 5px;
+}
+.button{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+@media (min-width: 768px) {/*Monitores en delante*/
+    #articulo{
+        max-width: 300px;
+        margin-left: 5vw;
+    }
+    h2{
+        margin-left: 10vw;
+    }
+    .ultima-visita, .seccion-de-ofertas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main-header-topbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .barra{
+        max-height: 30px;
+    }
+    .compra-en-cuotas{
+        text-align: right;
+    }
+    .Burger{
+        display: none;
+    }
+    .main-nav-bar, .left-navbar, .right-navbar{
+        display: flex;
+    }
+    .main-nav-bar{
+        justify-content: space-between;
+    }
+    .left-navbar, .right-navbar{
+        justify-content: space-between;
+    }
+    .left-navbar li, .right-navbar li{
+        margin-left: 10px;
+    }
+}
+@media (min-width: 1200px){/*teles*/
+    .ultima-visita, .seccion-de-ofertas{
+        margin: 0;
+        justify-content: space-around;
+    }
+    #articulo{
+        max-width: 250px;
+        margin-left: 10px;
+    }
+    h2{
+        margin: 0;
+    }
+    .main-header-topbar, .main-nav-bar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .left-navbar li, .right-navbar li{
+        margin-left: 0 10px;
+    }
+    .left-navbar a, .right-navbar a{
+        font-size: 19px;
+    }
+    .compra-en-cuotas{
+        max-width: none;
+        align-items: center;
+    }
+}
+
