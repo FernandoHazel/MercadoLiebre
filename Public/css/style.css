@@ -274,7 +274,7 @@ div #caja{
         margin-left: 10px;
     }
 }
-@media (min-width: 1200px){/*teles*/
+@media (min-width: 875px){/*teles*/
     .ultima-visita, .seccion-de-ofertas{
         margin: 0;
         justify-content: space-around;
