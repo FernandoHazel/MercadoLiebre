@@ -5,15 +5,15 @@ const path = require('path');
 app.use('/static', express.static(__dirname +'/public'))
 
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname + '/Views/home.html')
+    res.sendFile(__dirname + '/views/home.html')
 })
 
 app.get('/register', (req, res)=>{
-    res.sendFile(__dirname + '/Views/register.html')
+    res.sendFile(__dirname + '/views/register.html')
 })
 
 app.get('/Login', (req, res)=>{
-    res.sendFile(__dirname + '/Views/Login.html')
+    res.sendFile(__dirname + '/views/Login.html')
 })
 
 app.listen(process.env.PORT || 3000, ()=> { 
