@@ -1,0 +1,66 @@
+<%- include('partials/head')%>
+<body>
+    <%- include('partials/header')%>
+    <div class="cuerpo-de-página">
+        <img src="/images/img-home-banner.jpg" alt="Banner">
+        <h2>Basado en tu última visita</h2>
+        <section class="ultima-visita">
+
+
+            <% visited.forEach(element => { %>
+                <%- include('templates/productBanner', {element: element})%>
+            <%})%>
+            
+        </section>
+        <h2>Sección de ofertas</h2>
+        <section class="seccion-de-ofertas">
+            
+            <% offerts.forEach(element => { %>
+                <%- include('templates/productBanner', {element: element})%>
+            <%})%>
+
+        </section>
+
+        <!--Forms-->
+        <form action="/crear-producto" method="POST" class="form">
+            <div class="control-form">
+                <label for="producto">Nombre del producto</label>
+                <input type="text" name="producto" placeholder="Carro" class="control">
+            </div>
+            <div class="control-form">
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" placeholder="$2,345" class="control">
+            </div>
+            <div class="control-form">
+                <label for="oferta">¿Está en oferta?</label>
+                <input type="radio" name="oferta">
+            </div>
+            <div class="control-form">
+                <label>Categoría</label>
+                <select name="categoría" class="control">
+                    <option value="cocina">Cocina</option>
+                    <option value="Herramientas">Herramientas</option>
+                    <option value="sala">Sala</option>
+                </select>
+            </div>
+            <div class="control-form">
+                <label>Ciudad</label>
+                <select name="cuidad" class="control">
+                    <option value="GDL">GDL</option>
+                    <option value="MYT">MYT</option>
+                    <option value="TOL">TOL</option>
+                </select>
+            </div>
+            <div class="control-form">
+                <label>Descripción del producto</label>
+                <textarea name="descripción del producto" class="control"></textarea>
+            </div>
+            <button type="submit" class="button">Enviar</button>
+            <button type="reset" class="button">Borrar</button>
+        </form>
+        <%- include('partials/footer')%>
+    </div>
+</body>
+    
+    
+</html>
