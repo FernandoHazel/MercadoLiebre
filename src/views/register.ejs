@@ -2,46 +2,47 @@
 <body>
     <%- include('partials/header')%><img src="static/images/img-home-banner.jpg" alt="Banner">
     <main>
-        <form>
-            <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido">
+        <form class='form' style='margin-top: 20vh;'>
+            <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" class='control'>
             <br>
-            <input type="text" name="Nombre de usuario"  placeholder="Nombre de usuario">
+            <input type="text" name="Nombre de usuario"  placeholder="Nombre de usuario" class='control'>
             <br>
-            <input type="email" name="Email"  placeholder="Email">
+            <input type="email" name="Email"  placeholder="Email" class='control'>
             <br>
             <label>Fecha de nacimiento</label>
             <br>
-            <input type="date" name="Fecha de nacimiento">
+            <input type="date" name="Fecha de nacimiento" class='control'>
             <br>
-            <input type="text" name="Domicilio"  placeholder="Domicilio">
+            <input type="text" name="Domicilio"  placeholder="Domicilio" class='control'>
             <br>
             <label>Perfil de usuario</label>
             <div>
-                <input type="radio" name="tipo_de _usuario" id="tipo_de _usuario" value="comprador">
+                <input type="radio" name="tipo_de _usuario" id="tipo_de _usuario" value="comprador" class='control'>
                 <label for="tipo_de _usuario">Comprador</label>
-                <input type="radio" name="tipo_de _usuario" id="tipo_de _usuario" value="vendedor">
+                <input type="radio" name="tipo_de _usuario" id="tipo_de _usuario" value="vendedor" class='control'>
                 <label for="tipo_de _usuario">Vendedor</label>
             </div>
             <label for="Intereses">Intereses</label>
             <br>
-            <input type="checkbox" name="Electrodomésticos" id="Intereses"><label>Electrodomésticos</label>
+            <input type="checkbox" name="Electrodomésticos" id="Intereses" class='control'><label>Electrodomésticos</label>
             <br>
-            <input type="checkbox" name="Moda" id="Intereses"><label>Moda</label>
+            <input type="checkbox" name="Moda" id="Intereses" class='control'><label>Moda</label>
             <br>
-            <input type="checkbox" name="Hogar" id="Intereses"><label>Hogar</label>
+            <input type="checkbox" name="Hogar" id="Intereses" class='control'><label>Hogar</label>
             <br>
-            <input type="checkbox" name="Juguetería" id="Intereses"><label>Juguetería</label>
+            <input type="checkbox" name="Juguetería" id="Intereses" class='control'><label>Juguetería</label>
             <br>
-            <input type="checkbox" name="Vida sana" id="Intereses"><label>Vida sana</label>
+            <input type="checkbox" name="Vida sana" id="Intereses" class='control'><label>Vida sana</label>
             <br>
             <label for="foto_de_usuario">Foto de Perfil</label>
-            <input type="file" name="foto_de_usuario" id="foto_de_usuario">
+            <input type="file" name="foto_de_usuario" id="foto_de_usuario" class='control'>
             <br>
-            <input type="password" name="contraseña" placeholder="Contraseña">
-            <input type="password" name="contraseña" placeholder="Confirma contraseña">
+            <input type="password" name="contraseña" placeholder="Contraseña" class='control'>
+            <input type="password" name="contraseña" placeholder="Confirma contraseña" class='control'>
+            <button type="submit" class='button'>Enviar<a href="/home"></a></button>
+            <button type="reset" class='button' style="background-color: #EAC926;">Borrar</button>
         </form>
-        <button type="submit">Enviar<a href="/home"></a></button>
-        <button type="reset">Borrar</button>
+        
     </main>
     <%- include('partials/footer')%>
 </body>

@@ -2,14 +2,15 @@
 <body>
     <%- include('partials/header')%>
 <body class="login">
-    <form>
-        <Label>Nombre de usuario</Label>
+    <form class='form' style="margin-top: 20vh;">
+        <Label><h2>Nombre de usuario</h2></Label>
         <br>
-        <Input type="text" name="nombre_de_usuario" placeholder="PPedro22"></Input>
+        <Input type="text" name="nombre_de_usuario" placeholder="PPedro22" class='control'></Input>
         <br>
-        <Input type="password" name="contraseña" placeholder="Contraseña"></Input>
+        <Input type="password" name="contraseña" placeholder="Contraseña" class='control'></Input>
+        <button class="boton_envio" type="submit" >Enviar<a href="/home"></a></button>
     </form>
-    <button class="boton_envio" type="submit">Enviar<a href="/home"></a></button>
+
     <%- include('partials/footer')%>
 </body>
 </html>
